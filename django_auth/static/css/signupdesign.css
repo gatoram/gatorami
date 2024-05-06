@@ -1,0 +1,98 @@
+body {
+	font-size: 35px;
+	background-color: rgba(166, 222, 255, 1); 
+	font-family:'Montserrat';
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  background-color: white;
+  padding-top: 25px;
+  width:572px;
+  height:938px;
+  border-radius: 40px;
+}
+
+.submain{
+	width: 400px;
+	padding-top: 15px;
+	font-size: 16px;
+}
+
+.submain:hover{
+	cursor:pointer;
+}
+.signin{
+	float:left;
+	text-decoration: underline;
+}
+
+.forgotpassw{
+	float:right;
+	text-decoration: underline;
+}
+
+.signin:hover, .forgotpassw:hover{
+	opacity:0.7;
+}
+	
+.password1, .password2, .nickname, .email{
+	font-size: 20px;
+	float: left;
+	padding-top:15px;
+}
+
+.input{
+	border-radius: 6px;
+	width: 400px;
+	height: 45px;
+	font-size: 20px;
+}
+
+.input:hover{
+	cursor:pointer;
+	border: 2px solid rgba(21, 112, 197, 1);
+}
+
+.input:focus{
+	border: 2px solid rgba(21, 112, 197, 1);
+	outline: none;
+	box-shadow: rgba(21, 112, 197, 0.2) 0px 5px 15px;
+}
+
+.button{
+  vertical-align: bottom;
+  display: flex;
+  display: inline-block;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+}
+
+.acceptbutton{
+	font-family:'Montserrat';
+	background-color: rgb(24, 113, 198, 1);
+	color: rgba(255, 255, 255, 1);
+	border: 0px;
+	border-radius: 10px;
+	width: 200px;
+	height: 45px;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+	transition: opacity 0.5s;	
+}
+
+.acceptbutton:hover{
+	opacity: 0.8;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.acceptbutton:active{
+	opacity: 0.6;
+}

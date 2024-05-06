@@ -1,0 +1,29 @@
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="{% static "css/login.css" %}">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Вхід</title>
+</head>
+<body>
+<div class="main">
+ <h1>Вхід</h1><br>
+ {% csrf_token %}
+  <form method = "post">
+    <label for ="email" class="nameinput">Емейл:</label><br>
+    <input type="text" class="input" id="email" name="email"><br>
+	<label for ="password1" class="password1" >Пароль:</label><br>
+    <input type="password" class="input" id="password1" name="password1"><br>
+ </form>
+	<div class="button">
+	<input type="submit" class="acceptbutton" value="Продовжити"><br>
+	</div>
+	</div>
+ 
+</div>
+</body>
+
+{% endblock %}
